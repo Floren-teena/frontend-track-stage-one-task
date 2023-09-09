@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/slack_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Florentina's Slack Profile</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="profile">
+            <!-- Slack Display Picture --> 
+            <img src="./images/Slack_profile_image.jpeg" alt="Florentina Antigha" data-testid="slackDisplayImage">
+        </div>
+
+        <div class="info">
+            
+            <!-- My Slack User Name -->
+            <h1 data-testid="slackUserName">FLORENTINA ANTIGHA</h1>
+
+            <!-- Current Day of the Week -->
+            <p data-testid="currentDayOfTheWeek"></p>
+
+            <!-- Current UTC Time in Milliseconds-->
+            <p data-testid="currentUTCTime"></p>
+
+            <!-- My Track -->
+            <p data-testid="myTrack">Frontend</p>
+
+            <!-- GitHub URL to Project's source code-->
+            <p><a href="#" data-testid="githubURL">GitHub link to this Project's source code</a></p>
+        </div>
+        
+    </div>
+
+    <script>
+        // JavaScript to update real-time data attributes
+        const currentDayOfTheWeekElement = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+        const currentUTCTimeElement = document.querySelector('[data-testid="currentUTCTime"]');
+    
+        // Function to get the current day of the week
+        function getCurrentDayOfTheWeek() {
+            const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const currentDate = new Date();
+            const dayIndex = currentDate.getDay();
+            return daysOfWeek[dayIndex];
+        }
+    
+        // Function to get the current UTC time in milliseconds
+        function getCurrentUTCTime() {
+            return Date.now();
+        }
+    
+        // Update the elements with real-time data
+        currentDayOfTheWeekElement.textContent = getCurrentDayOfTheWeek();
+        currentUTCTimeElement.textContent = getCurrentUTCTime();
+    </script>
+    
+</body>
+</html>

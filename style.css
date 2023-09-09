@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*-----------------
+ [Stylesheet]
+ Project:	Slack Profile
+-----------------*/	
+
+/* SELECTORS */
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    min-height: 97vh;
+    background: rgb(123,126,246);
+    background: linear-gradient(120deg, rgba(123,126,246,1) 0%, rgba(98,209,210,0.6) 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 6vh;
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
+/* CLASSES */
+.container {
+    height: 90vh;
+    width: 40vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px hsla(50, 20%, 10%, 0.1), -10px 10px 10px hsla(50, 20%, 10%, 0.1);
+}
+.profile {
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info a {
+    text-decoration: none;
+    color: rgba(123,126,246,1);
+}
+.info a:hover {
+    color: rgba(98,209,210,0.6);
+}
+.info a:active {
+    color: red;
+}
