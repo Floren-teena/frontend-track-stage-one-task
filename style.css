@@ -4,6 +4,7 @@
  Project:	Slack Profile
 -----------------*/	
 
+/*---------------------------------------------------------------------------------------------------------------*/
 /* SELECTORS */
 *{
     font-family: 'Ubuntu', sans-serif;
@@ -11,7 +12,6 @@
 }
 body {
     min-height: 97vh;
-    background: rgb(123,126,246);
     background: linear-gradient(120deg, rgba(123,126,246,1) 0%, rgba(98,209,210,0.6) 80%);
     display: flex;
     flex-direction: column;
@@ -25,9 +25,10 @@ h1 {
 p {
     font-weight: 400;
 }
+
 /* CLASSES */
 .container {
-    height: 90vh;
+    height: 87vh;
     width: 40vw;
     background-color: white;
     display: flex;
@@ -65,3 +66,5 @@ p {
 .info a:active {
     color: red;
 }
+
+/*---------------------------------------------------------------------------------------------------------------*/
